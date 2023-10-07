@@ -8,34 +8,10 @@ public class Student {
     private String group;
     private String studentId;
 
-    public static Map<Object, Object> map = new HashMap<>();
-
     public Student(String name, String group, String studentId) {
         this.name = name;
         this.group = group;
         this.studentId= studentId;
-    }
-
-    public static void addStudent() {
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.println("для завершения работы программы введите end");
-            String input = scanner.nextLine();
-            if (input.equals("end")) {
-//                vivod();
-                return;
-            }
-        }
-    }
-
-    public static void vivod() {
-        for (Map.Entry<Object, Object> a : map.entrySet()) {
-            System.out.println(a);
-        }
-    }
-
-    public static void start() {
-        addStudent();
     }
 
     @Override
